@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker! Udacity Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").animate({fontSize: '40px'}, "slow");
+        });
+    </script>
+</head>
+<body>
+<h1>Lab: Pixel Art Maker</h1>
+
+<h2>First: Choose Grid Size</h2>
+
+Grid Height:
+<input type="number" id="inputHeight" name="height" min="1" max="100" value="1">
+Grid Width:
+<input type="number" id="inputWidth" name="width" min="1" max="100" value="1">
+<button type="button" id="submitCanvas">submit</button>
+
+<h2>Second: Pick A Color</h2>
+<input type="color" id="colorPicker">
+
+<h3>Now Design a Cool Pixel Drawing!</h3>
+<table id="pixelCanvas"></table>
+
+<h4><div>Thank You Google & Udacity for the course!</div></h4>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="designs.js"></script>
+</body>
+</html>
